@@ -1,4 +1,4 @@
-module github.com/yash-raj10/farm2ngo-Backend
+module github.com/yash-raj10/harvesthero-Backend
 
 go 1.21.7
 

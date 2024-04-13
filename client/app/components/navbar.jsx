@@ -10,6 +10,7 @@ import { CldUploadWidget } from "next-cloudinary";
 import React, { useCallback } from "react";
 import { TbPhotoPlus } from "react-icons/tb";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const { user, isLoading } = useUser();
@@ -310,7 +311,7 @@ export default function Navbar() {
           <div className="navbar bg-base-100 gap-2   shadow-md border">
             <div className="w-full flex justify-between">
               <div className="">
-                <a className="btn btn-neutral text-xl bg-zinc-600">Farm2Ngo</a>
+                <a className="btn btn-neutral text-xl bg-zinc-600"><Link href="/">HarvestHero</Link></a>
               </div>
 
               <div className="form-control">
@@ -367,7 +368,11 @@ export default function Navbar() {
                     </button>
                   </li>
                 )}
-
+                <li>
+                  <Link href="/learn">
+                    Learn
+                  </Link>
+                </li>
                 <li>
                   <a>Logout</a>
                 </li>

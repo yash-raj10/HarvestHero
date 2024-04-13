@@ -7,7 +7,7 @@ import (
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
-	"github.com/yash-raj10/farm2ngo-Backend/controllers"
+	"github.com/yash-raj10/harvesthero-Backend/controllers"
 )
 
 func main(){

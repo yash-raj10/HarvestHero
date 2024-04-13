@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/gorilla/mux"
-	"github.com/yash-raj10/farm2ngo-Backend/models"
+	"github.com/yash-raj10/harvesthero-Backend/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
@@ -32,9 +32,9 @@ func init(){
 
 	fmt.Print("Connection Success\n")
 
-	collection = client.Database("farm2ngo").Collection("profiles")
-	collection2 = client.Database("farm2ngo").Collection("crops")
-	collection3 = client.Database("farm2ngo").Collection("funds")
+	collection = client.Database("harvesthero").Collection("profiles")
+	collection2 = client.Database("harvesthero").Collection("crops")
+	collection3 = client.Database("harvesthero").Collection("funds")
 	fmt.Print("Instance is Ready\n")
 }
 
