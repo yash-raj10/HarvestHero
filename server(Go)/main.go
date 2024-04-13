@@ -7,10 +7,10 @@ import (
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
-	"github.com/yash-raj10/harvesthero-Backend/controllers"
+	"github.com/yash-raj10/farm2ngo-Backend/controllers"
 )
 
-func main(){
+func main() {
 
 	r := mux.NewRouter()
 
@@ -18,7 +18,7 @@ func main(){
 	r.HandleFunc("/api/profile/{userEmail}", controllers.GetOneProfile).Methods("GET")
 	r.HandleFunc("/api/addProfile", controllers.AddProfile).Methods("POST")
 	r.HandleFunc("/api/profile/{userEmail}", controllers.UpdateProfile).Methods("PUT")
-	
+
 	r.HandleFunc("/api/addCrop", controllers.AddCrop).Methods("POST")
 	r.HandleFunc("/api/crops", controllers.GetAllCrops).Methods("GET")
 	r.HandleFunc("/api/crop/{id}", controllers.GetOneCrop).Methods("GET")
